@@ -8,3 +8,4 @@ The following run_analysis script performs ths following steps:
 - 7. reshape into 1 row per participant, activity, data collection type
 - 8. then create a summarized data set 
 - 9. verify final data
+- 10.output final data

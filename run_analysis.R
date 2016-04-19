@@ -50,3 +50,5 @@ merged_data_mean_std_summarize <- summarize(merged_data_mean_std_group_by, mean 
 cat (nrow(merged_data_mean_std_summarize), 30 * 6 * 79)
 head(merged_data_mean_std_summarize)
 
+##10. output final data
+write.csv(merged_data_mean_std_summarize, file = "merged_data_mean_std_summarize.csv", quote=FALSE, row.names=FALSE)
