@@ -2,6 +2,7 @@
 library(httr)
 library(httpuv)
 library(sqldf)
+library(dplyr)
 library(jpeg)
 library(reshape2)
 setwd("Q:/dev/coursera/dataclean/jhu_dataclean_nk")
@@ -51,4 +52,4 @@ cat (nrow(merged_data_mean_std_summarize), 30 * 6 * 79)
 head(merged_data_mean_std_summarize)
 
 ##10. output final data
-write.csv(merged_data_mean_std_summarize, file = "merged_data_mean_std_summarize.csv", quote=FALSE, row.names=FALSE)
+write.table(merged_data_mean_std_summarize, file = "merged_data_mean_std_summarize.txt", quote=FALSE, row.names=FALSE)
